@@ -1,0 +1,12 @@
+@media only screen and (max-device-width: 480px) {
+  a[href^="tel"], a[href^="sms"] {
+    text-decoration: none;
+    color: black;
+    pointer-events: none;
+    cursor: default;
+  }
+  #container { padding: 1em 0 !important; }
+  #header, #footer { margin: 0 1em !important; }
+  #main { border-left-width: 0 !important; border-right-width: 0 !important; }
+  #body { width: 100% !important; padding: 1em !important; }
+}
