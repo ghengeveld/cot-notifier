@@ -132,7 +132,7 @@ foreach ($areas as $code => $area)
 		'SETTINGS_FORM_AREA_DESC' => $area['description'],
 		'SETTINGS_FORM_AREA_FREQUENCY' => cot_selectbox(cot_notifier_frequency_get($code), "frequencies[$code]", $freq_codes, $freq_titles, false)
 	));
-	$t->parse('MAIN.SETTINGS.AREA');
+	$t->parse('MAIN.AREA');
 }
 $t->assign(array(
 	'SETTINGS_FORM_URL' => cot_url('notifier', 'a=settings'),
